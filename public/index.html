@@ -16,8 +16,8 @@
 
 <body>
 
-    <header class="container mb-3">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="page-header mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,29 +25,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Sākumlapa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="./issues.html">Problēmas</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="main container">
         <div class="row">
             <div class="col-sm-12 col-lg-9">
-                <h2>Problēmu punkti</h1>
-                
-                <div class="leaflet" id="problem_map"></div>
+                <h2>Title</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint delectus nulla error unde temporibus
+                    tempore nobis itaque ipsum rerum, eligendi nostrum! Unde, vel. Provident fugiat veniam nulla
+                    nesciunt alias cum sed obcaecati eum saepe. Quaerat nam itaque maxime ex, dicta, alias ipsa sequi
+                    asperiores, id modi molestias voluptas assumenda maiores soluta quo corporis illo. Deserunt alias
+                    architecto modi totam similique, harum eligendi labore doloremque et at corporis hic eaque
+                    explicabo, veritatis voluptas mollitia sint quia quaerat illo? Numquam, beatae id tenetur sunt
+                    delectus quidem fugiat dignissimos eveniet. Officia, debitis nesciunt quibusdam, laborum repellat
+                    ratione nostrum cumque repellendus hic, rerum sapiente.</p>
+
             </div>
             <div class="col-sm-12 col-lg-3">
                 <h2>Notikumi</h2>
@@ -55,8 +57,15 @@
         </div>
     </div>
 
-    <footer>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright Neighbor ltd. <a href="#"> Linka vel nav</a>
+        </div>
+        <!-- Copyright -->
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
