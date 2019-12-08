@@ -1,9 +1,13 @@
 .page-footer{
     background-color: $theme-color-1;
-    padding: 1rem;
 
     .footer-copyright{
         color: $font-color-2;
         font-size: 1.2em;
+
+        a{
+            color: $font-color-2;
+            font-size: 0.6em;
+        }
     }
 }

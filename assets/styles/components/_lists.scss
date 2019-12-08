@@ -131,4 +131,18 @@
       }
     }
   }
+
+  &.single{
+    li{
+      .event{
+        flex-wrap: nowrap;
+
+        .text-block{
+          font-size: 0.7em;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
