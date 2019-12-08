@@ -1,3 +1,146 @@
 .page-header{
-    background-color: #4a4a4a;
+    background-color: $theme-color-1;
+
+    .logo{
+        height: 56px;
+        width: 100%;
+        display: flex;
+
+        span, img{
+            margin: auto 0;
+        }
+
+        span{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $font-color-2;
+        }
+    }
+
+    .menu-toggler{
+        position: absolute;
+        height: 25px;
+        width: 40px;
+        top: calc(50% - 12.5px);
+        right: 15px;
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+        transform: rotate(180deg);
+
+        &:focus{
+            outline: none;
+        }
+
+        .line{
+            background-color: $theme-color-2;
+            height: 5px;
+            margin-bottom: calc(10px / 2);
+            width: 100%;
+            transition: width 0.3s;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover{
+            .line{
+                &.mid{
+                    width: 70%;
+                    transition: width 0.3s;
+                }
+                &.none{
+                    width: 30%;
+                    transition: width 0.3s;
+                }
+            }
+        }
+    }
+
+    .links{
+        background-color: $theme-color-1;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 56px;
+        z-index: 2;
+
+        margin-bottom: 0;
+        list-style: none;
+        padding: 0;
+
+        li{
+            height: 40px;
+            transition: 0.3s;
+
+            a{
+                display: flex;
+                height: 100%;
+                text-decoration: none;
+
+                span{
+                    margin: auto;
+                    color: $font-color-2;
+                    font-size: 1.2em;
+                }
+            }
+
+            &.active{
+                font-weight: bold;
+            }
+
+            &:hover{
+                background-color: $theme-color-1-dark;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &.open{
+        .menu-toggler{
+            .line{
+                &.mid{
+                    width: 70%;
+                    transition: width 0.3s;
+                }
+                &.none{
+                    width: 30%;
+                    transition: width 0.3s;
+                }
+            }
+        }
+
+        .links{
+            display: block;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .logo{
+            width: 250px;
+        }
+
+        .menu-toggler{
+            display: none;
+        }
+
+        .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            top: 0;
+            left: 250px;
+            height: 56px;
+
+            li{
+                width: auto;
+                height: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
 }
