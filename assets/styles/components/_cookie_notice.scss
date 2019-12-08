@@ -1,0 +1,17 @@
+.cookie-notice {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
+  border-radius: 3px;
+  background-color: $theme-color-2;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+
+  @media (min-width: 768px){
+    width: 344px;
+    right: auto;
+  }
+}
