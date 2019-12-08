@@ -7,6 +7,13 @@
     li{
         width: 100%;
         text-align: center;
-        color: #ad0303;
+        color: $font-color-3;
     }
+}
+
+input[type="text"], textarea {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+    border-radius: 0;
 }

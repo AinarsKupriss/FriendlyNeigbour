@@ -1,3 +1,60 @@
 .btn{
     max-width: 400px;
+    background-color: $theme-color-5;
+    border-radius: 0;
+
+    &:hover{
+        background-color: $theme-color-5-dark;
+    }
+
+    &:focus, &:active, &:not(disabled), &:not(.disabled){
+        background-color: $theme-color-5-dark;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    &.btn-primary{
+        background-color: $theme-color-5;
+        border-color: $theme-color-5;
+
+        &:hover{
+            background-color: $theme-color-5-dark;
+        }
+
+        &:not(:disabled):not(.disabled):active{
+            background-color: $theme-color-5-dark;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    &.btn-secondary{
+        background-color: $theme-color-6;
+        border-color: $theme-color-6;
+
+        &:hover{
+            background-color: $theme-color-6-dark;
+        }
+
+        &:not(:disabled):not(.disabled):active{
+            background-color: $theme-color-6-dark;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+
+    &.btn-success{
+        background-color: $theme-color-7;
+        border-color: $theme-color-7;
+
+        &:hover{
+            background-color: $theme-color-7-dark;
+        }
+
+        &:not(:disabled):not(.disabled):active{
+            background-color: $theme-color-7-dark;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
 }
